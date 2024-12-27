@@ -1,6 +1,6 @@
 import 'package:bike_sharing_app/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
+import 'screens/login_signup_screen.dart';
 import 'screens/onboarding_screen.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class BikeSharingApp extends StatelessWidget {
       home: const SplashScreen(),
       routes: {
         "/onboarding": (context) => const OnboardingScreen(),
-        "/login": (context) => const LoginScreen(),
+        "/login": (context) =>  const LoginScreen(),
       },
     );
   }
