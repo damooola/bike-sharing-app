@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../components/background_container.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -17,17 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Stack(
         children: [
           //background gradient
-          Container(
-            height: double.infinity,
-            width: double.infinity,
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Color(0xFF2AF598), Color(0xFF009EFD)],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-            ),
-          ),
+          const BackgroundContainer(),
           //logo
           Align(
             alignment: Alignment.center,
@@ -50,6 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   margin: const EdgeInsets.only(bottom: 15),
                   width: 350,
                   height: 70,
+                  alignment: Alignment.center,
                   decoration: BoxDecoration(
                       color: const Color(0xFFFFFFFF),
                       borderRadius: BorderRadius.circular(35),
@@ -66,12 +59,11 @@ class _SplashScreenState extends State<SplashScreen> {
                             : Colors.transparent,
                         width: 1,
                       )),
-                  child: Center(
-                      child: Text(
+                  child: Text(
                     "Get Started",
                     style: GoogleFonts.montserrat(
                         color: const Color(0xFF3D003E), fontSize: 21),
-                  )),
+                  ),
                 ),
               ),
 

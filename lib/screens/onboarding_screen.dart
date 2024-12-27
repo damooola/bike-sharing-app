@@ -56,7 +56,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   onTap: () {
                     _pageController.animateToPage(2,
                         duration: const Duration(milliseconds: 200),
-                        curve: Curves.easeIn);
+                        curve: Curves.easeInOut);
                   },
                   child: Text(
                     "Skip",
@@ -67,7 +67,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 SmoothPageIndicator(
                   onDotClicked: (index) => _pageController.animateToPage(index,
                       duration: const Duration(milliseconds: 200),
-                      curve: Curves.easeIn),
+                      curve: Curves.easeInOut),
                   controller: _pageController,
                   count: 3,
                   effect: const WormEffect(
@@ -82,7 +82,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         ? Navigator.pushNamed(context, "/login")
                         : _pageController.nextPage(
                             duration: const Duration(milliseconds: 200),
-                            curve: Curves.easeIn);
+                            curve: Curves.easeInOut);
                   },
                   child: Text(
                     "Next",
