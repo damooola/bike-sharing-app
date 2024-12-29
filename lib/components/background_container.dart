@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 class BackgroundContainer extends StatelessWidget {
   final List<double>? stops;
   final bool whiteBackground;
-  final Widget? whiteContainerChild;
+  final Widget? whiteBackgroundChild;
   const BackgroundContainer(
       {super.key,
       required this.whiteBackground,
-      this.whiteContainerChild,
+      this.whiteBackgroundChild
+  ,
       this.stops});
 
   @override
@@ -38,7 +39,8 @@ class BackgroundContainer extends StatelessWidget {
                         color: Color(0xFFFFFFFF),
                         borderRadius:
                             BorderRadius.only(topLeft: Radius.circular(45))),
-                    child: whiteContainerChild,
+                    child: whiteBackgroundChild
+                ,
                   ),
                 ),
               ],
