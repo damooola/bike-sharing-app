@@ -4,6 +4,25 @@
 
 The `bike_sharing_app` is a Flutter-based mobile application that allows users to locate, rent, and return bikes from various bike-sharing stations. The app aims to provide a seamless and user-friendly experience for bike-sharing enthusiasts.
 
+## App Screenshots
+
+<p align="center">
+  <img src="https://github.com/damooola/bike-sharing-app/blob/main/assets/app_screenshots/splash_screen.png"
+  alt="Splash Screen"
+  width="300">
+</p>
+
+<p align="center">
+  <img src="https://github.com/damooola/bike-sharing-app/blob/main/assets/app_screenshots/onboard_locate.png" alt="Locate" width="200">
+  <img src="https://github.com/damooola/bike-sharing-app/blob/main/assets/app_screenshots/onboard_unlock.png" alt="Unlock" width="200">
+  <img src="https://github.com/damooola/bike-sharing-app/blob/main/assets/app_screenshots/onboard_ride.png" alt="Ride" width="200">
+</p>
+
+<p align="center">
+  <img src="https://github.com/damooola/bike-sharing-app/blob/main/assets/app_screenshots/login.png" alt="Login" width="250">
+  <img src="https://github.com/damooola/bike-sharing-app/blob/main/assets/app_screenshots/signup.png" alt="Sign Up" width="250">
+</p>
+
 ## Features
 
 - **User Authentication**: Secure login and registration using email and password.
