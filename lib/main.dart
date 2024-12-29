@@ -17,7 +17,7 @@ class BikeSharingApp extends StatelessWidget {
       home: const SplashScreen(),
       routes: {
         "/onboarding": (context) => const OnboardingScreen(),
-        "/login": (context) =>  const LoginScreen(),
+        "/login_signup": (context) => const LoginSignUpScreen(),
       },
     );
   }
