@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 
 class BackgroundContainer extends StatelessWidget {
   final List<double>? stops;
-  const BackgroundContainer({super.key, this.stops});
+  final bool whiteBackground;
+  final Widget? whiteContainerChild;
+  const BackgroundContainer(
+      {super.key,
+      required this.whiteBackground,
+      this.whiteContainerChild,
+      this.stops});
 
   @override
   Widget build(BuildContext context) {
-
-    //background gradient
     return Container(
       height: double.infinity,
       width: double.infinity,
@@ -19,6 +23,27 @@ class BackgroundContainer extends StatelessWidget {
           end: Alignment.bottomCenter,
         ),
       ),
+      child: whiteBackground
+          ? Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                //space before white background
+                const SizedBox(height: kToolbarHeight * 2.5),
+                // white backgroud
+                Expanded(
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 25),
+                    padding: const EdgeInsets.only(top: 45),
+                    decoration: const BoxDecoration(
+                        color: Color(0xFFFFFFFF),
+                        borderRadius:
+                            BorderRadius.only(topLeft: Radius.circular(45))),
+                    child: whiteContainerChild,
+                  ),
+                ),
+              ],
+            )
+          : Container(),
     );
   }
 }
