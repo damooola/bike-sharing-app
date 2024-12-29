@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Stack(
         children: [
           //background gradient
-          const BackgroundContainer(),
+          const BackgroundContainer(whiteBackground: false),
           //logo
           Align(
             alignment: Alignment.center,
@@ -77,7 +77,8 @@ class _SplashScreenState extends State<SplashScreen> {
                         color: const Color(0xFF3D003E), fontSize: 15),
                   ),
                   TextButton(
-                      onPressed: () => Navigator.pushNamed(context, "/login"),
+                      onPressed: () =>
+                          Navigator.pushNamed(context, "/login_signup"),
                       child: Text(
                         "Log in",
                         style: GoogleFonts.montserrat(
