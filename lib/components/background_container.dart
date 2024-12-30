@@ -7,8 +7,7 @@ class BackgroundContainer extends StatelessWidget {
   const BackgroundContainer(
       {super.key,
       required this.whiteBackground,
-      this.whiteBackgroundChild
-  ,
+      this.whiteBackgroundChild,
       this.stops});
 
   @override
@@ -39,8 +38,7 @@ class BackgroundContainer extends StatelessWidget {
                         color: Color(0xFFFFFFFF),
                         borderRadius:
                             BorderRadius.only(topLeft: Radius.circular(45))),
-                    child: whiteBackgroundChild
-                ,
+                    child: whiteBackgroundChild,
                   ),
                 ),
               ],
