@@ -64,7 +64,13 @@ class SignupColumn extends StatelessWidget {
         //flexible space
         const Spacer(),
         //sign up button
-        const MyButton(buttonText: "Sign up"),
+        MyButton(
+          buttonText: "Sign up",
+          onTap: () {
+            const Duration(seconds: 10);
+            Navigator.pushNamed(context, "/verification");
+          },
+        ),
         //keypad
         const NumberKeypad()
       ],

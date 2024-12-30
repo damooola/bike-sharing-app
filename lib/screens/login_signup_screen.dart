@@ -39,7 +39,6 @@ class _LoginScreenState extends State<LoginSignUpScreen> {
                     GestureDetector(
                       onTap: () => setState(() {
                         const Duration(milliseconds: 200);
-
                         isLoginTapped = true;
                       }),
                       child: Text(
@@ -87,6 +86,7 @@ class _LoginScreenState extends State<LoginSignUpScreen> {
                                   fontSize: 32,
                                   fontWeight: FontWeight.w600)),
                     ),
+                    //white line
                     Container(
                       height: 6,
                       width: 48,

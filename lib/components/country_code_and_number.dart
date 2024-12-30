@@ -3,22 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+//format phone number to add space after every 3 digits
+String formatPhoneNumber(String phoneNumber) {
+  final buffer = StringBuffer();
+
+  for (int i = 0; i < phoneNumber.length; i++) {
+    buffer.write(phoneNumber[i]);
+    if ((i + 1) % 3 == 0 && i < 6) {
+      // Add a space after every 3 characters except the last group
+      buffer.write(' ');
+    }
+  }
+  return buffer.toString();
+}
+
 class CountryCodeAndNumber extends StatelessWidget {
   const CountryCodeAndNumber({super.key});
-
-  //format phone number to add space after every 3 digits
-  String formatPhoneNumber(String phoneNumber) {
-    final buffer = StringBuffer();
-
-    for (int i = 0; i < phoneNumber.length; i++) {
-      buffer.write(phoneNumber[i]);
-      if ((i + 1) % 3 == 0 && i < 6) {
-        // Add a space after every 3 characters except the last group
-        buffer.write(' ');
-      }
-    }
-    return buffer.toString();
-  }
 
   @override
   Widget build(BuildContext context) {

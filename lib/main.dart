@@ -1,4 +1,5 @@
 import 'package:bike_sharing_app/screens/splash_screen.dart';
+import 'package:bike_sharing_app/screens/verification_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/login_signup_screen.dart';
 import 'screens/onboarding_screen.dart';
@@ -18,6 +19,7 @@ class BikeSharingApp extends StatelessWidget {
       routes: {
         "/onboarding": (context) => const OnboardingScreen(),
         "/login_signup": (context) => const LoginSignUpScreen(),
+        "/verification": (context) => VerificationScreen()
       },
     );
   }

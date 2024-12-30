@@ -13,10 +13,10 @@ class NumberKeypad extends StatelessWidget {
       children: [
         Container(
           color: const Color(0xFFD2D5DB),
-          padding: const EdgeInsets.only(left: 10, bottom: 70),
+          padding: const EdgeInsets.only(left: 10, bottom: 75),
           //number keypad
           child: FlutterKeyboard(
-            externalPaddingButtons: const EdgeInsets.only(top: 12, right: 10),
+            externalPaddingButtons: const EdgeInsets.only(top: 10, right: 10),
             internalPaddingButtons:
                 const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
             buttonsDecoration: BoxDecoration(

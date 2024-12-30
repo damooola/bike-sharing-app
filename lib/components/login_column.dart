@@ -32,7 +32,10 @@ class LoginColumn extends StatelessWidget {
         //flexible space
         const Spacer(),
         //login button
-        const MyButton(buttonText: "Log in"),
+        MyButton(
+          buttonText: "Log in",
+          onTap: () {},
+        ),
         //keypad stack
         const NumberKeypad()
       ],
