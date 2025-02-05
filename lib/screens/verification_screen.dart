@@ -94,7 +94,9 @@ class VerificationScreen extends StatelessWidget {
                   //login button
                   MyButton(
                     buttonText: "Continue",
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, "/welcome");
+                    },
                   ),
                   //keypad stack
                   const NumberKeypad()

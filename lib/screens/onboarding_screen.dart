@@ -79,7 +79,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 GestureDetector(
                   onTap: () {
                     currentPage == 2
-                        ? Navigator.pushNamed(context, "/login_signup")
+                        ? Navigator.pushNamedAndRemoveUntil(context,
+                            "/login_signup", (Route<dynamic> route) => false)
                         : _pageController.nextPage(
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.easeInOut);
